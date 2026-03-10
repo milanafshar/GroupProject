@@ -1,0 +1,154 @@
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Undergraduate Convocation Speakers</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Source+Serif+4:wght@300;400&display=swap" rel="stylesheet" />
+ <link rel="stylesheet" href="convocation.css">
+</head>
+
+<body>
+
+<!-- PAGE HEADING TITLES-->
+<header>
+<header class="site-header" role="banner">
+  <div class="nu-heading">Northwestern University</div>
+  <h1>Undergraduate School Convocations</h1>
+  <p>Explore Past Keynote Speakers by School and Year</p>
+</header>
+
+<!-- FILTER BUTTONS BY YEAR; calls setYear() when year filter button is clicked -->
+ 
+<div class="filter-group">
+    <span class="filter-label">Year</span>
+    <button class="filter-btn active" onclick="setYear('all', this)">All</button>
+    <button class="filter-btn" onclick="setYear('y2025', this)">2025</button>
+    <button class="filter-btn" onclick="setYear('y2024', this)">2024</button>
+    <button class="filter-btn" onclick="setYear('y2023', this)">2023</button>
+    <button class="filter-btn" onclick="setYear('y2022', this)">2022</button>
+    <button class="filter-btn" onclick="setYear('y2021', this)">2021</button>
+</div>
+
+<!-- SPACING DIVIDER BETWEEN BUTTONS -->
+
+<div class="button-divider"></div>
+
+<!-- FILTER BUTTONS BY SCHOOL; calls setSchool() when school filter button is clicked -->
+
+<div class="filter-group">
+    <span class="filter-label">School</span>
+    <button class="filter-btn active" onclick="setSchool('all', this)">All</button>
+    <button class="filter-btn" onclick="setSchool('comm', this)">Communication</button>
+    <button class="filter-btn" onclick="setSchool('bienen', this)">Bienen</button>
+    <button class="filter-btn" onclick="setSchool('weinberg', this)">Weinberg</button>
+    <button class="filter-btn" onclick="setSchool('medill', this)">Medill</button>
+    <button class="filter-btn" onclick="setSchool('mccormick', this)">McCormick</button>
+    <button class="filter-btn" onclick="setSchool('sesp', this)">SESP</button>
+</div>
+
+<div class="grid">
+  
+  <!-- 2025 SPEAKER ITEM CARD -->
+  <div class="item y2025 comm"><div class="item-year">2025</div><div class="item-school">School of Communication</div><img src="1.png"><div class="item-speaker">Heather Headley</div><div class="item-desc">Tony, Grammy-Award Winning Singer</div></div>
+  <div class="item y2025 bienen"><div class="item-year">2025</div><div class="item-school">Bienen School of Music</div><img src="2.png"><div class="item-speaker">Deborah Rutter</div><div class="item-desc">Arts and Culture Leader, Advocate, Advisor</div></div>
+  <div class="item y2025 weinberg"><div class="item-year">2025</div><div class="item-school">Weinberg College of Arts &amp; Sciences</div><img src="3.png"><div class="item-speaker">Junta Nakai</div><div class="item-desc">Global Vice President, DataBricks</div></div>
+  <div class="item y2025 medill"><div class="item-year">2025</div><div class="item-school">Medill School of Journalism, Media, IMC</div><img src="4.png"><div class="item-speaker">Edith Chapin</div><div class="item-desc">Former Editor-in-Chief, NPR News</div></div>
+  <div class="item y2025 mccormick"><div class="item-year">2025</div><div class="item-school">McCormick School of Engineering</div><img src="5.png"><div class="item-speaker">Matthew Skaruppa</div><div class="item-desc">Chief Financial Officer, Duolingo</div></div>
+  <div class="item y2025 sesp"><div class="item-year">2025</div><div class="item-school">School of Education &amp; Social Policy</div><img src="6.png"><div class="item-speaker">Larissa FastHorse</div><div class="item-desc">Award-Winning Playwright, Choreographer </div></div>
+
+  <!-- 2024 SPEAKER ITEM CARD -->
+  <div class="item y2024 comm"><div class="item-year">2024</div><div class="item-school">School of Communication</div><img src="7.png"><div class="item-speaker">Billy Eichner</div><div class="item-desc">Comedian, Actor, Writer, Producer </div></div>
+  <div class="item y2024 bienen"><div class="item-year">2024</div><div class="item-school">Bienen School of Music</div><img src="8.png"><div class="item-speaker">George Lewis</div><div class="item-desc">Composer, Musicologist, Trombonist</div></div>
+  <div class="item y2024 weinberg"><div class="item-year">2024</div><div class="item-school">Weinberg College of Arts &amp; Sciences</div><img src="9.png"><div class="item-speaker">Nikki Okrah</div><div class="item-desc">CEO, Founder of Chaku Foods </div></div>
+  <div class="item y2024 medill"><div class="item-year">2024</div><div class="item-school">Medill School of Journalism, Media, IMC</div><img src="10.png"><div class="item-speaker">Robert Samuels</div><div class="item-desc">National Enterprise Reporter, The Washington Post</div></div>
+  <div class="item y2024 mccormick"><div class="item-year">2024</div><div class="item-school">McCormick School of Engineering</div><img src="11.png"><div class="item-speaker">Dr. Sheila Gujrathi</div><div class="item-desc">Biotechnology Entrepreneur</div></div>
+  <div class="item y2024 sesp"><div class="item-year">2024</div><div class="item-school">School of Education &amp; Social Policy</div><img src="12.png"><div class="item-speaker">Mitchell S. Jackson</div><div class="item-desc">Pulitzer Prize-Winning Writer</div></div>
+
+  <!-- 2023 SPEAKER ITEM CARD -->
+  <div class="item y2023 comm"><div class="item-year">2023</div><div class="item-school">School of Communication</div><img src="13.png"><div class="item-speaker">Stephanie March</div><div class="item-desc">Law and Order SVU Actress, Activist</div></div>
+  <div class="item y2023 bienen"><div class="item-year">2023</div><div class="item-school">Bienen School of Music</div><img src="14.png"><div class="item-speaker">Lidiya Yankovskaya</div><div class="item-desc">Conductor, Former Music Director of Chicago Opera Theater</div></div>
+  <div class="item y2023 weinberg"><div class="item-year">2023</div><div class="item-school">Weinberg College of Arts &amp; Sciences</div><img src="15.png"><div class="item-speaker">David Ngene</div><div class="item-desc">Former Innovation Desiner, NXT Space Kitchen</div></div>
+  <div class="item y2023 medill"><div class="item-year">2023</div><div class="item-school">Medill School of Journalism, Media, IMC</div><img src="16.png"><div class="item-speaker">Mara Brock Akil</div><div class="item-desc">Television Writer, Producer</div></div>
+  <div class="item y2023 mccormick"><div class="item-year">2023</div><div class="item-school">McCormick School of Engineering</div><img src="17.png"><div class="item-speaker">Christina Kosmowski</div><div class="item-desc">CEO, LogicMonitor</div></div>
+  <div class="item y2023 sesp"><div class="item-year">2023</div><div class="item-school">School of Education &amp; Social Policy</div><img src="18.png"><div class="item-speaker">Pamay Bassey</div><div class="item-desc">Former Chief Learning & Culture Officer, Kraft Heinz</div></div>
+
+  <!-- 2022 SPEAKER ITEM CARD -->
+  <div class="item y2022 comm"><div class="item-year">2022</div><div class="item-school">School of Communication</div><img src="19.png"><div class="item-speaker">Judy Belk</div><div class="item-desc">Former President and CEO, The California Wellness Foundation</div></div>
+  <div class="item y2022 bienen"><div class="item-year">2022</div><div class="item-school">Bienen School of Music</div><img src="20.png"><div class="item-speaker">Jennifer Koh</div><div class="item-desc">Violinist</div></div>
+  <div class="item y2022 weinberg"><div class="item-year">2022</div><div class="item-school">Weinberg College of Arts &amp; Sciences</div><img src="21.png"><div class="item-speaker">Jeanne Sparrow</div><div class="item-desc">Emmy-Winning Media Personality, Author</div></div>
+  <div class="item y2022 medill"><div class="item-year">2022</div><div class="item-school">Medill School of Journalism, Media, IMC</div><img src="22.png"><div class="item-speaker">Mike Greenberg</div><div class="item-desc">Television Anchor, Host</div></div>
+  <div class="item y2022 mccormick"><div class="item-year">2022</div><div class="item-school">McCormick School of Engineering</div><img src="23.png"><div class="item-speaker">Annette Rippert</div><div class="item-desc">Former Group Chief Executive of Strategy & Consulting, Accenture </div></div>
+  <div class="item y2022 sesp"><div class="item-year">2022</div><div class="item-school">School of Education &amp; Social Policy</div><img src="24.png"><div class="item-speaker">Na'ilah Suad Nasir</div><div class="item-desc">Sixth President, Spencer Foundation</div></div>
+
+  <!-- 2021 SPEAKER ITEM CARD -->
+  <div class="item y2021 comm"><div class="item-year">2021</div><div class="item-school">School of Communication</div><img src="25.png"><div class="item-speaker">Ebs Burnough</div><div class="item-desc">Filmmaker, Former White House Official</div></div>
+  <div class="item y2021 bienen"><div class="item-year">2021</div><div class="item-school">Bienen School of Music</div><img src="26.png"><div class="item-speaker">Giancarlo Guerrero</div><div class="item-desc">Grammy Award-Winning Conductor</div></div>
+  <div class="item y2021 weinberg"><div class="item-year">2021</div><div class="item-school">Weinberg College of Arts &amp; Sciences</div><img src="27.png"><div class="item-speaker">Samir Mayekar</div><div class="item-desc">Former Chicago Deputy Mayor</div></div>
+  <div class="item y2021 medill"><div class="item-year">2021</div><div class="item-school">Medill School of Journalism, Media, IMC</div><img src="28.png"><div class="item-speaker">George R.R. Martin</div><div class="item-desc">Award-Winning Author, Game of Thrones</div></div>
+  <div class="item y2021 mccormick"><div class="item-year">2021</div><div class="item-school">McCormick School of Engineering</div><img src="29.png"><div class="item-speaker">Bruce Mau</div><div class="item-desc">Co-Founder and CEO, Massive Change Network</div></div>
+  <div class="item y2021 sesp"><div class="item-year">2021</div><div class="item-school">School of Education &amp; Social Policy</div><img src="30.png"><div class="item-speaker">Tarana Burke</div><div class="item-desc">Founder of MeToo Movement, Activist</div></div>
+
+</div>
+
+<script>
+
+/* INTERNAL JAVASCRIPT SECTION - DEFINES FUNCTIONS FOR FILTERING */
+
+
+let activeYear = 'all';
+let activeSchool = 'all'; /* stores actively selected filters (default = show all) */ 
+
+
+/* DEFINES setYear FUNCTION; runs when a year filter button is clicked */ 
+function setYear(year, btn) {
+  activeYear = year;
+  let buttons = btn.parentElement.querySelectorAll('.filter-btn'); /* selects all filter buttons in same group */ 
+  
+ 
+
+    buttons.forEach(b => { 
+      b.classList.remove('active');
+    });
+      btn.classList.add('active');  /* for each button, removes active highlight from rest of buttons, 
+  makes only clicked button active */ 
+
+    filter(); /* runs filter function to update which cards appear based on selected year */ 
+}
+
+
+/* DEFINES setSchool FUNCTION; same process as above but by school */ 
+
+function setSchool(school, btn) {
+  activeSchool = school;
+  let buttons = btn.parentElement.querySelectorAll('.filter-btn');
+
+  buttons.forEach(b => {
+    b.classList.remove('active');
+  });
+    btn.classList.add('active');
+  filter();
+}
+
+/* DEFINES FILTER FUNCTION: */ 
+
+function filter() {
+
+  let items = document.querySelectorAll('.item'); 
+  items.forEach(item => { 
+
+    let matchYear = (activeYear === 'all' || item.classList.contains(activeYear));
+    let matchSchool = (activeSchool === 'all' || item.classList.contains(activeSchool));
+
+    /* CONDITIONAL STATEMENTS */
+    if (matchYear && matchSchool) { 
+      item.classList.remove('hidden'); /* if item matches selected filter, item = displayed on page */
+    } else {
+      item.classList.add('hidden'); /* if item doesnt match selected filter, item = hidden*/ 
+    }
+  });
+}
+
+</script> 
+
+</body> 

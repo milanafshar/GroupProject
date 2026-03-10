@@ -1,0 +1,153 @@
+body {
+      font-family: 'Source Serif 4', Georgia, serif;
+      background: var(--cream);
+      color: #1a0e2e;
+      min-height: 100vh;
+    }
+
+:root {
+    --purple:    #4E2A84;   
+    --purple-lt: #7b4db8;
+    --white:     #ffffff;
+    --cream:     #fdf8f2;
+    --overlay:   rgba(20, 8, 40, 0.55);
+    }
+
+
+    /* HEADER STYLING */
+
+    header {
+      color: black;
+      padding: 36px 24px 28px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    header h1 {
+      font-size: 2em;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      color:black;
+    }
+    header p {
+      margin-top: 6px;
+      font-size: 1.2em;
+      color: black;
+      font-weight: 300;
+    }
+    .nu-heading {
+      background: var(--gold);
+      color: var(--purple);
+      font-size: 0.9rem;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      padding: 3px 10px;
+      border-radius: 20px;
+      margin-bottom: 10px;
+    }
+
+    /* FILTER BUTTON STYLING  */
+
+    .filter-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .filter-label {
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--gray-400);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-right: 2px;
+    }
+    .filter-btn {
+      padding: 6px 13px;
+      border-radius: 5px;
+      border: 1.5px;
+      background: white;
+      font-size: 1rem;
+      font-family: 'Source Serif 4', Georgia, serif;      
+      font-weight: 500;
+
+    }
+    .filter-btn:hover { 
+      color: var(--purple); 
+    }
+  
+
+    .filter-btn.active { /* styling for actively clicked button */
+
+      background: var(--purple);
+      color: white;
+    }
+
+    .button-divider {
+      height: 10px;
+        }
+
+    /* PAGE GRID STYLING  */
+    .grid {
+      max-width: 1500px;
+      padding: 8px 20px 40px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 320px));
+      justify-content: center;
+      gap: 1.8rem;    
+      margin-top: 50px;
+    }
+
+    /* STYLING FOR SPEAKER CARDS */
+    .item {
+      background: var(--white);
+      border-top: 4px solid var(--purple);
+      border-radius: 4px;
+      padding: 2rem 1.8rem 1.6rem;
+      box-shadow: 0 2px 18px rgba(78, 42, 132, 0.08);
+      display: flex;
+      flex-direction: column;
+      gap: 1.1rem;
+    }
+
+    .item.hidden { display: none; }
+
+    .item-year {
+      font-weight: 100;
+      margin-top:-20px;
+      padding: 2px 1px;
+      letter-spacing: 0.1px;
+      text-align:right
+    }
+
+    .item-school {
+      font-size: 0.8em;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: var(--purple-light);
+      margin-top: -10px;
+    }
+    .item-speaker {
+      font-size: 1.05rem;
+      font-weight: 700;
+      text-align: center;
+    }
+    .item-desc {
+      font-size: 0.7em;
+      color: black;
+      font-style:italic;
+      margin:-10px;
+    }
+
+    .item img { 
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+}
+
+    
