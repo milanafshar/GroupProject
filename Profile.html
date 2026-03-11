@@ -1,42 +1,195 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <title>Commencement Speaker Interactive</title>
+    <meta charset="UTF-8">
+
+    <!-- Makes the page responsive on phones and tablets -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title that appears on the browser tab -->
+    <title>Commencement Speaker Profile – Sarah Jessica Parker</title>
+
     <style>
+        /* Overall page styling */
         body {
+            font-family: Arial, Helvetica, sans-serif;
+            /* Sets the font style */
             margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f4f6f8;
+            /* Removes default browser margins */
+            background: #f7f5fb;
+            /* Light purple background color */
             color: #333;
+            /* Dark gray text color */
         }
 
-        .container {
-            max-width: 1000px;
-            margin: auto;
-            padding: 40px 20px;
-        }
-
+        /* Header section at the top of the page */
         header {
+            background: #4E2A84;
+            /* Northwestern purple color */
+            color: white;
+            /* White text */
             text-align: center;
-            margin-bottom: 30px;
+            /* Centers the text */
+            padding: 40px 20px;
+            /* Space inside the header */
         }
 
+        /* Main title styling */
         header h1 {
             margin: 0;
-            font-size: 36px;
+            font-size: 2.5em;
+            /* Larger title text */
         }
 
-        header p {
-            color: #666;
+        /* Main content container */
+        .container {
+            max-width: 900px;
+            /* Keeps the content from stretching too wide */
+            margin: auto;
+            /* Centers the container horizontally */
+            padding: 40px 20px;
+            background: white;
+            /* White background for readability */
+        }
+
+        /* Layout for the profile section */
+        .profile {
+            display: flex;
+            /* Places image and text side-by-side */
+            flex-wrap: wrap;
+            /* Allows layout to stack on small screens */
+            gap: 30px;
+            /* Space between image and text */
+            align-items: flex-start;
+        }
+
+        /* Styling for the profile image */
+        .profile img {
+            width: 300px;
+            /* Sets image width */
+            border-radius: 8px;
+            /* Rounded corners */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            /* Subtle shadow */
+        }
+
+        /* Text section next to the image */
+        .bio {
+            flex: 1;
+            /* Allows text section to expand */
+            min-width: 250px;
+            /* Prevents text from getting too narrow */
+        }
+
+        /* Styling for sub-headings */
+        h2 {
+            color: #4E2A84;
+            /* Purple heading color */
+            margin-top: 0;
+        }
+
+        /* Footer styling */
+        footer {
+            margin-top: 40px;
+            padding: 20px;
+            font-size: 0.9em;
+            /* Slightly smaller text */
+            color: #555;
+            border-top: 1px solid #ddd;
+            /* Light divider line */
+        }
+
+        /* Link styling */
+        a {
+            color: #4E2A84;
         }
     </style>
+</head>
 
 <body>
-    <h1> Sarah Jessica Parker</h1>
-    <div id="byline"> <!---contain div-->
-        <a href="https://anayaroman.github.io/Interactives-winter-26/Anaya/index.html/">
-            By Anaya Roman
-        </a>
-        <P> Sarah Jessica Parker is an American actress and producer, best known for her roles as Carrie Bradshaw in the
-            television series Sex and the City and Hocus Pocus. </p>
-        <img src="Parker.jpg" width="100%" alt="Sarah Jessica Parker" />
+
+    <!-- Page header introducing the commencement page -->
+    <header>
+        <h1>Northwestern University Commencement</h1>
+        <p>2026 Speaker Profile</p>
+    </header>
+
+    <!-- Main content area -->
+    <div class="container">
+
+        <!-- Profile section that contains the image and biography -->
+        <div class="profile">
+
+            <!-- Image section -->
+            <div class="image">
+
+                <!-- Photo of Sarah Jessica Parker from Wikimedia Commons -->
+                <img src="Parker.jpg" alt="Sarah Jessica Parker">
+
+                <!-- Image credit for copyright and attribution -->
+                <p style="font-size:0.8em;">
+                    Image: © Shawn Miller / Wikimedia Commons – Licensed under Creative Commons
+                </p>
+
+            </div>
+
+            <!-- Biography section -->
+            <div class="bio">
+
+                <!-- Name heading -->
+                <h2>Sarah Jessica Parker</h2>
+
+                <!-- Short biography paragraph -->
+                <p>
+                    Sarah Jessica Parker is an award-winning American actress, producer, and entrepreneur.
+                    She is widely recognized for her role as Carrie Bradshaw in the television series
+                    <em>Sex and the City</em>, a performance that earned her multiple Golden Globe and Emmy awards.
+                </p>
+
+                <!-- Additional background information -->
+                <p>
+                    Beyond her acting career, Parker has built a reputation as a creative producer,
+                    fashion entrepreneur, and advocate for the arts. Parker has also become a strong
+                    advocate for reading and libraries. She has collaborated with the American Library Association
+                    to support librarians and fight book bans.
+                </p>
+                <!---History on speaking with Northwestern in the past-->
+                <p>
+                    In April 2025, Parker visited Northwestern University to participate in the School of
+                    Communication’s “Dialogue with the Dean” series. During the event, Parker spoke with Dean E. Patrick
+                    Johnson about her decades-long career as an actor and producer, her work supporting literature and
+                    the arts, and the evolving landscape of television and film. The visit offered students an
+                    opportunity to engage directly with Parker about creative careers and collaborations.
+                </p>
+                <!-- Connection to commencement speaking -->
+                <p>
+                    Parker’s work reflects a commitment to storytelling, creativity, and cultural impact.
+                    As a commencement speaker, she brings insights about perseverance, artistic vision,
+                    and the value of embracing new opportunities.
+                </p>
+                <!---Important Date-->
+                <P>
+                    Parker is scheduled to speak at Northwestern University’s 2026 Commencement ceremony on June 14,
+                    2026 at 10:30 a.m. The ceremony will be held at the United Center in Chicago. During
+                    the event, she will also receive an honorary Doctor of Arts degree.
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- Footer containing citation and copyright information -->
+        <footer>
+            <p>
+                Photo credit: Shawn Miller / Wikimedia Commons (Creative Commons License).
+                Content for educational and informational use on the Northwestern University
+                Commencement Speaker Profile page.
+            </p>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
