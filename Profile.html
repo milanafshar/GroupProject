@@ -1,7 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-
+ <link rel="stylesheet" href="style.css">
 <head>
+
+    <div class="navbar">    
+    <div class="nav-buttons">
+            <a href="index.html" class="nav-item"> Home</a>
+      <a href="convocation.html" class="nav-item">Convocation</a>
+      <a href="Profile.html" class="nav-item">Profile</a>
+      <a href="Timeline.html" class="nav-item">Timeline</a>
+      <a href="reaction.html" class="nav-item"> Reaction</a>
+    </div>
+      <div class="nav-item hamburger">☰</div>
+  </div>
+
+<script>
+    document.querySelector('.hamburger').onclick = () => {
+      document.querySelector('.nav-buttons').classList.toggle('active');
+    };
+  </script>
+  
     <meta charset="UTF-8">
 
     <!-- Makes the page responsive on phones and tablets -->
