@@ -1,8 +1,25 @@
 <!DOCTYPE html>
 
 <head>
+
+  <div class="navbar">    
+    <div class="nav-buttons">
+            <a href="index.html" class="nav-item"> Home</a>
+      <a href="convocation.html" class="nav-item">Convocation</a>
+      <a href="Profile.html" class="nav-item">Profile</a>
+      <a href="Timeline.html" class="nav-item">Timeline</a>
+      <a href="reaction.html" class="nav-item"> Reaction</a>
+    </div>
+      <div class="nav-item hamburger">☰</div>
+  </div>
+
+<script>
+    document.querySelector('.hamburger').onclick = () => {
+      document.querySelector('.nav-buttons').classList.toggle('active');
+    };
+  </script>
   <!-- my site stylesheets -->
-  <link href="reaction.css" type="text/css" rel="stylesheet" />
+  <link href="style.css" type="text/css" rel="stylesheet" />
   <!-- (need to be replaced)link to my soundcite interactive by Knight Lab -->
   <link href='https://cdn.knightlab.com/libs/soundcite/latest/css/player.css' rel='stylesheet' type='text/css'><script type='text/javascript' src='https://cdn.knightlab.com/libs/soundcite/latest/js/soundcite.min.js'></script>
 
@@ -10,21 +27,7 @@
   <link rel="stylesheet"
      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
 
-  <!-- navigation bar -->
-  <div class="navbar">
-    <div class="nav-buttons">
-      <a href="reaction.html" class="nav-item">Home</a>
-      <a href="about.html" class="nav-item">About</a>
-    </div>
 
-    <div class="nav-item hamburger">☰</div>
-  </div>
-
-  <script>
-    document.querySelector('.hamburger').onclick = () => {
-      document.querySelector('.nav-buttons').classList.toggle('active');
-    };
-  </script>
 
 <!-- main story content -->
 <div class="content">
